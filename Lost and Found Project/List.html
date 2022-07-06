@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>List</title>
+</head>
+<body>
+    <div class="list">
+        <h1>List Section</h1>
+    </div>
+    <table>
+        <thead >
+            <tr >
+                <th class="tr">
+                    <h2>Name</h2>
+                </th>
+                <th class="tr">
+                    <h2> Found</h2>
+                </th>
+                <th class="tr">
+                    <h2> Thing</h2>
+                </th>
+                <th class="tr">
+                    <h2> ContactNo.</h2>
+                </th>
+            </tr>
+        </thead>
+        <tbody id="Found">
+            <tr>
+                     <td><input class="inyt" id="name" type="text"></td>
+                    <td><input class="inyt" id="found" type="text"></td>
+                    <td><input class="inyt" id="thing" type="text"></td>
+                    <td><input class="inyt" id="contact" type="text"></td>
+                <td><button class="bnt" id="delf" type="submit" >Delete</button></td>
+            </tr>
+            </tbody >
+            <thead >
+                <tr >
+                    <th class="tr">
+                        <h2>Name</h2>
+                    </th>
+                    <th class="tr">
+                        <h2> Lost</h2>
+                    </th>
+                    <th class="tr">
+                        <h2> Thing</h2>
+                    </th>
+                    <th class="tr">
+                        <h2> ContactNo.</h2>
+                    </th>
+                </tr>
+            </thead>
+            <tbody id="Lost">
+            <tr>
+                <td><input class="inyt" id="name" type="text" ></td>
+                <td><input class="inyt" id="lost" type="text" ></td>
+                <td><input class="inyt" id="thing" type="text" ></td>
+                <td><input class="inyt" id="contact" type="text" ></td>
+                <td><button class="bnt" id="dell"  type="submit">Delete</button></td>
+            </tr>   
+        </tbody>
+    </table>
+<div class="clean"><button id="clear">Clear List</button></div>
+    <h2 class="anker"> Goto lost Section from here >>>>><a href="Lost.html">Lost</a></h2>
+    <h2 class="anker">Goto to found Section from here >>>>> <a href="Found.html">Found</a> </h2>
+    <h2 class="anker">Goto to Home Page Section from here >>>>> <a href="Home.html">Home</a> </h2>
+</body>
+<script src="index.js">
+</script>
+</html>

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lost</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="box"><h1>Lost Section</h1></div>
+    <div class="form">
+        <div class="con">
+            <input id="namel" placeholder="Name" name="nam" class="iny" type="text">
+            <input id="wl" name="what" placeholder="WhatLost" class="iny" type="text">
+            <input id="whl" class="iny" placeholder="WhereLost" type="text">
+            <input id="Cnl" class="iny" placeholder="ContactNo" type="text">
+            <button class="addl" id="adl" type="submit">Add to list</button>
+        </div></div>
+    <!-- <table>
+        <thead>
+            <tr>
+                <th>
+                    <h2>Name</h2>
+                </th>
+                <th>
+                    <h2> WhereLost</h2>
+                </th>
+                <th>
+                    <h2> Thing</h2>
+                </th>
+                <th>
+                    <h2> ContactNo.</h2>
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><input class="txt" id="tx" type="text"></td>
+                    <td><input class="txt" id="tx" type="text"></td>
+                    <td><input class="txt" id="tx" type="text"></td>
+                    <td><input class="txt" id="tx" type="text"></td>
+            </tr>
+            <tr>
+                <td><input class="txt" id="tx" type="text"></td>
+                <td><input class="txt" id="tx" type="text"></td>
+                <td><input class="txt" id="tx" type="text"></td>
+                <td><input class="txt" id="tx" type="text"></td>
+            </tr>
+            <tr>
+                <td><input class="txt" id="tx" type="text"></td>
+                <td><input class="txt" id="tx" type="text"></td>
+                <td><input class="txt" id="tx" type="text"></td>
+                <td><input class="txt" id="tx" type="text"></td>
+            </tr>
+            <tr>
+                <td><input class="txt" id="tx" type="text"></td>
+                <td><input class="txt" id="tx" type="text"></td>
+                <td><input class="txt" id="tx" type="text"></td>
+                <td><input class="txt" id="tx" type="text"></td>
+            </tr>
+            <tr>
+                <td><input class="txt" id="tx" type="text"></td>
+                <td><input class="txt" id="tx" type="text"></td>
+                <td><input class="txt" id="tx" type="text"></td>
+                <td><input class="txt" id="tx" type="text"></td>
+            </tr>
+            <tr>
+                <td><input class="txt" id="tx" type="text"></td>
+                <td><input class="txt" id="tx" type="text"></td>
+                <td><input class="txt" id="tx" type="text"></td>
+                <td><input class="txt" id="tx" type="text"></td>
+            </tr>
+            <tr>
+                <td><input class="txt" id="tx" type="text"></td>
+                    <td><input class="txt" id="tx" type="text"></td>
+                    <td><input class="txt" id="tx" type="text"></td>
+                    <td><input class="txt" id="tx" type="text"></td>
+            </tr>
+        </tbody>
+    </table> -->
+    <h2 class="anker"> Goto list Section from here >>>>><a href="List.html">List</a></h2>
+    <h2 class="anker">Goto to found Section from here >>>>><a href="Found.html">Found</a> </h2>
+    <h2 class="anker">Goto to Home Page Section from here >>>>><a href="Home.html">Home</a> </h2>
+</body>
+<script >
+   let add2 = document.getElementById('adl');
+add2.addEventListener("click", () => {
+    console.log("Update the things");
+    let namel = document.getElementById('namel').value;
+    let wtl = document.getElementById('wl').value;
+    let whl = document.getElementById('whl').value;
+    let Cnl = document.getElementById('Cnl').value;
+    if (localStorage.getItem('items') == null) {
+        itemArray = [];
+        itemArray.push([namel, wtl, whl, Cnl]);
+        localStorage.setItem('items', JSON.stringify(itemArray));
+    }
+    else {
+        itemArrayStr = localStorage.getItem('items');
+        itemArray = JSON.parse(itemArrayStr);
+        itemArray.push([namel, wtl, whl, Cnl]);
+        localStorage.setItem('items', JSON.stringify(itemArray));
+    }
+})
+</script>
+</html>

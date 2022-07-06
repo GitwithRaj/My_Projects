@@ -1,0 +1,93 @@
+body{
+    background: fixed;
+    background-color: rgb(228, 242, 242);
+}
+.list{
+    display: flex;
+    justify-content: center;
+    color: blue;
+    font-style: oblique;
+}
+.navbar{
+    display: flex;
+    /* display: block; */
+    justify-content: center;
+    font-size: larger;
+    box-sizing: border-box;
+    align-items: center;
+    
+}
+.tr{
+    padding: 60px;
+}
+.clean{
+    display: flex;
+    justify-content: center;  
+}
+#clear{
+    font-size:large;
+    border-radius: 6px;
+}
+#clear:hover{
+    background-color: blue;
+}
+.home{
+    display: flex;
+    justify-content: center;
+    color: rgb(1, 1, 17);
+    font-size: larger;
+    font-weight: bolder;
+}
+.anker{
+    padding-left: 10%;
+}
+.iny{
+    padding: 5px;
+    margin: 5px;
+    font-size: larger;
+    padding: 10px;
+    margin: 8px;
+    border-radius:5px ;
+}
+.inyt{
+    font-size: larger;
+    padding: 5px;
+    margin: 4px;
+    border-radius:5px ;
+}
+.add,.addl{
+    padding: 10px;
+    margin: 8px;
+    border-radius:5px ;
+    width: 100px;
+}
+.add:hover,.addl:hover{
+    background-color: brown;
+}
+.form{
+    left: 50%;
+    display: flex;
+    margin-left: 40%;
+    /* width: fit-content; */
+    justify-content: center;
+    max-width: 300px;
+    border: 2px solid red;
+    align-items: center;
+    background-color: blanchedalmond;
+    border-radius: 5px;
+}
+
+.box{
+    display: flex;
+    justify-content: center;
+}
+.bnt ,.bnt1{
+    border-radius: 4px;
+    font-size: larger;
+}
+.bnt:hover{
+    background-color: brown;
+}
+.bnt1:hover{
+    background-color: rgb(70, 18, 192);
+}
