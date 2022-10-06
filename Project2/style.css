@@ -1,0 +1,71 @@
+.table{
+    padding: 10px;
+    margin: 10px;
+    width: 1300px;
+    height: 500px;
+    display: flex;
+    justify-items: center;
+    border: 2px solid rgb(188, 177, 177);
+    border-radius: 6px;
+}
+.first{
+    padding: 10px;
+ margin: 10px;
+    width: 500px;
+    height: 380px;
+    display: flex;
+    justify-items: center;
+    border: 2px solid rgb(165, 159, 159);
+    font-size: 25px;
+    border-radius: 5px;
+    background-color: aquamarine;
+}
+#fullname{
+    border-radius: 5px;
+    width: 480px;
+    margin-top: 5px;
+    padding: 10px;
+    background-color: rgb(237, 248, 248);
+}
+#city{
+    border-radius: 5px;
+    width: 480px;
+    margin-top: 5px;
+    padding: 10px;
+    background-color: rgb(237, 248, 248);
+}
+#empcode{
+    border-radius: 5px;
+    width: 480px;
+    margin-top: 5px;
+    padding: 10px;
+    background-color: rgb(237, 248, 248);
+}
+#salary{
+    border-radius: 5px;
+    width: 480px;
+    margin-top: 5px;
+    padding: 10px;
+    background-color: rgb(237, 248, 248);
+}
+#sub{
+    margin-top: 30px;
+    width: 120px;
+    height: 40px;
+    font-size: larger;
+    border-radius: 6px;
+}
+#sub:hover{
+    background-color: rgb(123, 123, 130);
+}
+#emplist{
+    padding: 10px;
+    margin: 10px;
+       width: 750px;
+       height: 400px;
+       border: 2px solid rgb(165, 159, 159);
+       font-size: 25px;
+       font-weight: 300;
+       border-radius: 5px;
+       background-color: rgb(208, 248, 234);
+}

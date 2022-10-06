@@ -19,71 +19,9 @@
             <input id="wf" name="what" placeholder="WhatFound" class="iny" type="text">
             <input id="whf" class="iny" placeholder="WhereFound" type="text">
             <input id="Cn" class="iny" placeholder="ContactNo" type="text">
-            <button class="add" id="adf" type="submit">Add</button>
+            <button class="add" id="adf" type="button">Add</button>
         </div>
     </div>
-    <!-- <table>
-            <thead>
-                <tr>
-                    <th>
-                        <h2>Name</h2>
-                    </th>
-                    <th>
-                        <h2>WhereFound</h2>
-                    </th>
-                    <th>
-                        <h2> Thing</h2>
-                    </th>
-                    <th>
-                        <h2> ContactNo.</h2>
-                    </th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td><input class="txt" id="tx" type="text"></td>
-                    <td><input class="txt" id="tx" type="text"></td>
-                    <td><input class="txt" id="tx" type="text"></td>
-                    <td><input class="txt" id="tx" type="text"></td>
-                </tr>
-                <tr>
-                    <td><input class="txt" id="tx" type="text"></td>
-                    <td><input class="txt" id="tx" type="text"></td>
-                    <td><input class="txt" id="tx" type="text"></td>
-                    <td><input class="txt" id="tx" type="text"></td>
-                </tr>
-                <tr>
-                    <td><input class="txt" id="tx" type="text"></td>
-                    <td><input class="txt" id="tx" type="text"></td>
-                    <td><input class="txt" id="tx" type="text"></td>
-                    <td><input class="txt" id="tx" type="text"></td>
-                </tr>
-                <tr>
-                    <td><input class="txt" id="tx" type="text"></td>
-                    <td><input class="txt" id="tx" type="text"></td>
-                    <td><input class="txt" id="tx" type="text"></td>
-                    <td><input class="txt" id="tx" type="text"></td>
-                </tr>
-                <tr>
-                    <td><input class="txt" id="tx" type="text"></td>
-                    <td><input class="txt" id="tx" type="text"></td>
-                    <td><input class="txt" id="tx" type="text"></td>
-                    <td><input class="txt" id="tx" type="text"></td>
-                </tr>
-                <tr>
-                    <td><input class="txt" id="tx" type="text"></td>
-                    <td><input class="txt" id="tx" type="text"></td>
-                    <td><input class="txt" id="tx" type="text"></td>
-                    <td><input class="txt" id="tx" type="text"></td>
-                </tr>
-                <tr>
-                    <td><input class="txt" id="tx" type="text"></td>
-                    <td><input class="txt" id="tx" type="text"></td>
-                    <td><input class="txt" id="tx" type="text"></td>
-                    <td><input class="txt" id="tx" type="text"></td>
-                </tr>
-            </tbody>
-        </table> -->
 
     <h2 class="anker"> Goto list Section from here >>>>><a href="List.html">List</a></h2>
     <h2 class="anker">Goto to lost Section from here >>>>><a href="Lost.html">Lost</a> </h2>
@@ -101,7 +39,6 @@ add1.addEventListener("click", () => {
         itemjsonArray = [];
         itemjsonArray.push([name, wtf, whf, Cn]);
         localStorage.setItem('itemsJson', JSON.stringify(itemjsonArray));
-        i++;
     }
     else {
         itemjsonArrayStr = localStorage.getItem('itemsJson');
@@ -109,6 +46,10 @@ add1.addEventListener("click", () => {
         itemjsonArray.push([name, wtf, whf, Cn]);
         localStorage.setItem('itemsJson', JSON.stringify(itemjsonArray));
     }
+    document.getElementById('name').value="";
+    document.getElementById('wf').value="";
+    document.getElementById('whf').value="";
+    document.getElementById('Cn').value="";
 })
 </script>
 

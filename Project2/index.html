@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>From deletion and edition</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <table>
+        <tr class="table">
+            <td class="first">
+                <form onsubmit="event.preventDefault();onFormSubmit();">
+                    <div>
+                        <label for="">Full Name</label>
+                        <input type="text" name="fullname" id="fullname">
+                    </div>
+                    <div>
+                        <label for="">Employee Code</label>
+                        <input type="text" name="empcode" id="empcode">
+                    </div>
+                    <div>
+                        <label for="">Salary</label>
+                        <input type="text" name="salary" id="salary">
+                    </div>
+                    <div>
+                        <label for="">City</label>
+                        <input type="text" name="city" id="city">
+                    </div>
+                    <div class="form-action-buttons">
+                        <input type="submit" value="Submit" id="sub">
+                    </div>
+                </form>
+            </td>
+            <td class="second">
+                <table class="list" id="emplist">
+                    <thead>
+                        <tr>
+                            <div class="row">
+                                <th>Full Name</th>
+                                <th>Emp Code</th>
+                                <th>Salary</th>
+                                <th>City</th>
+                                <th></th>
+                            </div>
+                        </tr>
+                    </thead>
+                    <tbody>
+
+                    </tbody>
+                </table>
+            </td>
+        </tr>
+    </table>
+    <script src="script.js"></script>
+</body>
+
+</html>
